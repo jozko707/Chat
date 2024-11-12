@@ -1,0 +1,60 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+#gameArea {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 600px;
+  background-color: #333;
+  overflow: hidden;
+  border: 2px solid #fff;
+}
+
+#player {
+  position: absolute;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#scoreBoard {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+}
+
+#restartButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.star {
+  position: absolute;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #f39c12;
+  border-radius: 50%;
+}
